@@ -78,6 +78,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickBack"
             android:text="Back"
             android:id="@+id/button"
             android:layout_weight="1" />
@@ -85,6 +86,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickMap"
             android:text="Map"
             android:id="@+id/button2"
             android:layout_weight="1" />

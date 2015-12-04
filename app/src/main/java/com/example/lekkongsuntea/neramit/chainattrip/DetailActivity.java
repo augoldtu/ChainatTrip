@@ -1,7 +1,9 @@
 package com.example.lekkongsuntea.neramit.chainattrip;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,6 +32,19 @@ public class DetailActivity extends AppCompatActivity {
         showView();
 
     }  //main method
+
+    public void clickBack(View view) {
+        finish();
+    }
+
+    public void clickMap(View view) {
+
+        Intent objIntent = new Intent(DetailActivity.this, MapsActivity.class);
+        objIntent.putExtra("Lat", latString);
+        objIntent.putExtra("Lng", lngString);
+        startActivity(objIntent);
+
+    }
 
     private void showView() {
 

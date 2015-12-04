@@ -14,7 +14,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private String latString, lngString, iconString = "Hotel";
+    private String latString, lngString, iconString = "Hotel", titleString;
     private double latADouble, lngADouble;
     private LatLng centerLatLng;
     private int imageMakerAnInt;
@@ -69,6 +69,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         latADouble = Double.parseDouble(latString);
         lngADouble = Double.parseDouble(lngString);
         iconString = getIntent().getStringExtra("Icon");
+        titleString = getIntent().getStringExtra("Title");
 
     }
 
@@ -82,7 +83,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //Create Marker
         mMap.addMarker(new MarkerOptions()
                 .position(centerLatLng)
-                .icon(BitmapDescriptorFactory.fromResource(imageMakerAnInt)));
+                .icon(BitmapDescriptorFactory.fromResource(imageMakerAnInt))
+        .title(titleString));
 
 
 

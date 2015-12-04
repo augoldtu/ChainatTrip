@@ -43,6 +43,7 @@ public class DetailActivity extends AppCompatActivity {
         objIntent.putExtra("Lat", latString);
         objIntent.putExtra("Lng", lngString);
         objIntent.putExtra("Icon", iconString);
+        objIntent.putExtra("Title", titleString);
         startActivity(objIntent);
 
     }

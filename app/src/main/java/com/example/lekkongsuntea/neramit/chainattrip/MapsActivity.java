@@ -86,8 +86,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .icon(BitmapDescriptorFactory.fromResource(imageMakerAnInt))
         .title(titleString));
 
-
-
     }   // onMapReady
 
 }   // Main Class

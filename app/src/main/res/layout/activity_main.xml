@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lekkongsuntea.neramit.chainattrip.MainActivity"
+    android:background="@drawable/bg_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head1"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/h1"
+            android:textColor="@color/text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/image"
+                android:layout_height="@dimen/image"
+                android:id="@+id/imageView"
+                android:layout_weight="1"
+                android:src="@drawable/icon_hotel" />
+
+            <ImageView
+                android:layout_width="@dimen/image"
+                android:layout_height="@dimen/image"
+                android:id="@+id/imageView2"
+                android:layout_weight="1"
+                android:src="@drawable/icon_restaurant" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel"
+                android:id="@+id/textView2"
+                android:textSize="@dimen/h2"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant"
+                android:id="@+id/textView3"
+                android:textSize="@dimen/h2"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="@dimen/image"
+                android:layout_height="@dimen/image"
+                android:id="@+id/imageView3"
+                android:layout_weight="1"
+                android:src="@drawable/icon_souvenir" />
+
+            <ImageView
+                android:layout_width="@dimen/image"
+                android:layout_height="@dimen/image"
+                android:id="@+id/imageView4"
+                android:layout_weight="1"
+                android:src="@drawable/icon_travel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/souvenir"
+                android:id="@+id/textView4"
+                android:textSize="@dimen/h2"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/travel"
+                android:id="@+id/textView5"
+                android:textSize="@dimen/h2"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

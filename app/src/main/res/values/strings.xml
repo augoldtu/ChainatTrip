@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Chainat Trip</string>
+
+    <string name="head1">หมวดหมู่</string>
+    <string name="hotel">โรงแรม</string>
+    <string name="restaurant">ร้านอาหาร</string>
+    <string name="souvenir">ร้านขายของที่ระลึก</string>
+    <string name="travel">สถานที่ท่องเที่ยว</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

@@ -29,7 +29,7 @@ public class ChainatListview extends AppCompatActivity {
     private void createListView() {
 
         //Read SQLite Form Where Hotel, ......
-        String strCategory = getIntent().getStringExtra("Category");
+        final String strCategory = getIntent().getStringExtra("Category");
 
         //Read All Data
         SQLiteDatabase objSqLiteDatabase = openOrCreateDatabase("Chainat.db", MODE_PRIVATE, null);
@@ -81,6 +81,7 @@ public class ChainatListview extends AppCompatActivity {
                 objIntent.putExtra("Detail", LongDetailStrings[i]);
                 objIntent.putExtra("Lat", LatStrings[i]);
                 objIntent.putExtra("Lng", LngStrings[i]);
+                objIntent.putExtra("Icon", strCategory);
                 startActivity(objIntent);
 
 

@@ -15,7 +15,7 @@ public class DetailActivity extends AppCompatActivity {
     private TextView titleTextView, detailTextView;
     private ImageView firstImageView, secondImageView, thirdImageView;
     private String titleString, FirstString, secondString, thirdString, detailString,
-    latString, lngString;
+    latString, lngString, iconString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,7 @@ public class DetailActivity extends AppCompatActivity {
         Intent objIntent = new Intent(DetailActivity.this, MapsActivity.class);
         objIntent.putExtra("Lat", latString);
         objIntent.putExtra("Lng", lngString);
+        objIntent.putExtra("Icon", iconString);
         startActivity(objIntent);
 
     }
@@ -77,6 +78,7 @@ public class DetailActivity extends AppCompatActivity {
         detailString = getIntent().getStringExtra("Detail");
         latString = getIntent().getStringExtra("Lat");
         lngString = getIntent().getStringExtra("Lng");
+        iconString = getIntent().getStringExtra("Icon");
 
 
     }

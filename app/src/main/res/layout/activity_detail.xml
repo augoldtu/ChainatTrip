@@ -13,7 +13,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,9 +56,11 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:id="@+id/scrollView"
-            android:layout_margin="20dp"
+            android:layout_margin="5dp"
             android:padding="10dp"
-            android:background="#82fefbfb">
+            android:background="#82fefbfb"
+            android:layout_weight="0.64"
+            android:fillViewport="false">
 
             <TextView
                 android:layout_width="wrap_content"

@@ -45,13 +45,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private void chooseImageMarker() {
 
         if (iconString.equals("Hotel")) {
-            imageMakerAnInt = R.drawable.build1;
+            imageMakerAnInt = R.drawable.pin_hotel;
         } else if (iconString.equals("Restaurant")) {
-            imageMakerAnInt = R.drawable.build2;
+            imageMakerAnInt = R.drawable.pin_restaurant;
         } else if (iconString.equals("Souvenir")) {
-            imageMakerAnInt = R.drawable.build3;
+            imageMakerAnInt = R.drawable.pin_shop;
         } else {
-            imageMakerAnInt = R.drawable.build4;
+            imageMakerAnInt = R.drawable.pin_travel;
         }
 
     }   // chooseImageMarker
